@@ -1,4 +1,4 @@
-package ca.pragmaticcoding.weather;
+package ca.pragmaticcoding.weather.external;
 
 import javafx.scene.image.Image;
 
@@ -7,7 +7,6 @@ public class WeatherData {
     private String conditions = "";
     private String temperature = "";
     private Image weatherImage;
-
 
     public String getConditions() {
         return conditions;

@@ -1,4 +1,4 @@
-package ca.pragmaticcoding.weather;
+package ca.pragmaticcoding.weather.external;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;

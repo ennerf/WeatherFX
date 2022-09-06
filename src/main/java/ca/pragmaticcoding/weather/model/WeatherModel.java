@@ -1,14 +1,10 @@
-package ca.pragmaticcoding.weather;
+package ca.pragmaticcoding.weather.model;
 
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.scene.image.Image;
-
-import java.util.List;
 
 public class WeatherModel {
 
@@ -16,7 +12,6 @@ public class WeatherModel {
     private final StringProperty conditions = new SimpleStringProperty("");
     private final StringProperty city = new SimpleStringProperty("Nice");
     private final ObjectProperty<Image> icon = new SimpleObjectProperty<>();
-    private final ObservableList<String> cities = FXCollections.observableArrayList();
     private final StringProperty units = new SimpleStringProperty("metric");
 
     public String getTemperature() {
@@ -65,14 +60,6 @@ public class WeatherModel {
 
     public void setCity(String city) {
         this.city.set(city);
-    }
-
-    public ObservableList<String> getCities() {
-        return cities;
-    }
-
-    public void setCities(List<String> cities) {
-        this.cities.setAll(cities);
     }
 
     public String getUnits() {
